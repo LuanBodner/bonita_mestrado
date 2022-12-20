@@ -12,6 +12,7 @@
    },
    "dependencies": {
       "axios": "^0.21.1",
+      "cors": "^2.8.5",
       "express": "^4.17.1",
       "express-timeout-handler": "^2.2.0",
       "mysql": "^2.14.1",
@@ -24,7 +25,8 @@
    },
    "scripts": {
       "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/index.ts",
+      "build": "tsc ",
       "test": "ts-node src/index.ts",
-      "start": "ts-node src/index.ts"
+      "start": "nodemon src/index.ts"
    }
 }
